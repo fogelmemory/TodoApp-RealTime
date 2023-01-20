@@ -153,32 +153,7 @@ h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 15x; font-wei
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
          const db = getFirestore(app);
-        
-
-
-//          const citiesRef = collection(db, "cities");
-
-//          const q= query(collection(db, "cities"));
-//          const querySnapshot = await getDocs(q);
-// querySnapshot.forEach((doc) => {
-//   // doc.data() is never undefined for query doc snapshots
-//   console.log(doc.id, " => ", doc.data());
-//   let data = doc.data()
-//   let row  = `<tr class="cities" id="${doc.id}">
-//                             <td>${data.country}</td>
-//                             <td>${data.name}</td>
-//                              <td><button type="button"  id="${doc.id}" class="btn btn-danger" >Delete</button></td>
-             
-
-                       
-//                       </tr>`;
-            
-//             let table = document.getElementById('city')
-//             table.innerHTML += row
-   
-            
-
-// });
+       
 
 
 async function showAll(){
@@ -290,20 +265,6 @@ element1[y].addEventListener("click", updateStatus);
   
 element2[x].addEventListener("click", deleteTask);
 }
-// ipd.push(doc.id)
-// console.log($('#taskarea'+doc.id).text());
-
-
-// ipn.push(document.getElementById("taskarea"+doc.id).value)
-// console.log(ipn[0])
-
-
-// let element3 = document.getElementsByClassName('updateTask')
-//     for(let x=0;x<element3.length;x++){
-      
-//     element3[x].addEventListener('click',updateContent.bind(event,ipd[x],ipn));
-    
-//     }
 
 
   });
